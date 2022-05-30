@@ -1,0 +1,27 @@
+{
+  "name": "lab1",
+  "version": "1.0.0",
+  "description": "to learn how to use npm",
+  "main": "index.html",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hk-ngoc/ReactJSExercise.git"
+  },
+  "author": "Khanh-Ngoc",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hk-ngoc/ReactJSExercise/issues"
+  },
+  "homepage": "https://github.com/hk-ngoc/ReactJSExercise#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
