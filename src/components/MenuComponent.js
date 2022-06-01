@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Media} from 'reactstrap;'
+import {Media} from 'reactstrap';
 
 class Menu extends Component {
     constructor(props) {
@@ -43,7 +43,7 @@ class Menu extends Component {
                     description: 'A delectable, semi-sweet New York Style Cheese Cake, with Graham cracker crust and spiced with Indian cardamoms'
                 }
             ],
-            ]
+            
         }
     }
 
@@ -57,10 +57,10 @@ class Menu extends Component {
                         </Media>
                         <Media body className="mt-5">
                             <Media heading>{dish.name}</Media>
-                            <p>{dish.discription}</p>
+                            <p>{dish.description}</p>
                         </Media>
                     </Media>
-                </div>
+                </div>)
         });
         return (
             <div className="container">
