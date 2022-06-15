@@ -1,5 +1,6 @@
-﻿import React, { Component } from react;
-import { STAFFS } from './shared/staffs';
+﻿import React, { Component } from 'react';
+import { Card, CardTitle } from 'reactstrap';
+import { STAFFS } from './shared/staffs.jsx';
 
 
 class StaffList extends Component {
@@ -25,9 +26,7 @@ class StaffList extends Component {
 		return (
 			<div className="container">
 				<div className="row">{stafflist}</div>
-				<div className="row">
-					<p>Bấm vào tên nhân viên để xem chi tiết</p>
-				</div>
+				<div className="row"><p>Bấm vào tên nhân viên để xem chi tiết</p></div>
 			</div>
 		
 			)
