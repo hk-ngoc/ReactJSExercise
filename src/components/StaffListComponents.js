@@ -24,6 +24,7 @@ class StaffList extends Component {
 				<Card>
 					<CardImg width="100%" src={stafflist.image} alt={stafflist.name} />
 					<CardBody>
+						<CardText>Tên nhân viên: {stafflist.name}</CardText>
 						<CardText>Ngày sinh: {dateFormat(stafflist.doB, "dd/mm/yy")}</CardText>
 						<CardText>Ngày vào công ty: {dateFormat(stafflist.startDate, "dd/mm/yy")}</CardText>
 						<CardText>Phòng ban: {stafflist.department.name}</CardText>
