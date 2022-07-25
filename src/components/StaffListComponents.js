@@ -49,8 +49,8 @@ class StaffList extends Component {
 		const staffinfo = this.props.staffdetail.map((stafflist) => {
 			return (
 				<div key={stafflist.id} className={this.state.columnDefault} >
-					<Card onClick={() => this.onSelectedStaff(stafflist)} className="mt-1">
-						<CardTitle className="text-14 m-auto text-primary">{stafflist.name}</CardTitle>
+					<Card onClick={() => this.onSelectedStaff(stafflist)} className="mt-3 bg-info">
+						<CardTitle className="text-14 mt-2 mb-2 text-center">{stafflist.name}</CardTitle>
 					</Card>
 				</div>
 			)
