@@ -25,7 +25,7 @@ class StaffList extends Component {
 	renderStaff(stafflist) {
 		if (stafflist != null) {
 			return (
-				<div className="col-12">
+				<div className="col-8">
 					<Card>
 						<CardImg width="100%" src={stafflist.image} alt={stafflist.name} />
 						<CardBody>
@@ -60,10 +60,10 @@ class StaffList extends Component {
 		return (
 			<div className="container">
 				<div className="row m-3">
-					<button onClick={()=> this.onColumnSelect("col-md-12 m-3")} className="btn btn-success mr-3" >Xếp 1 cột</button>
-					<button onClick={() => this.onColumnSelect("col-md-5 m-3")} className="btn btn-success mr-3" >Xếp 2 cột</button>
-					<button onClick={() => this.onColumnSelect("col-md-3 m-3")} className="btn btn-success mr-3" >Xếp 3 cột</button>
-					<button onClick={() => this.onColumnSelect("col-md-2 m-3")} className="btn btn-success mr-3" >Xếp 5cột</button>
+					<button onClick={()=> this.onColumnSelect("col-md-12 m-3")} className="btn btn-success mr-3" >Hiển thị 1 cột</button>
+					<button onClick={() => this.onColumnSelect("col-md-5 m-3")} className="btn btn-success mr-3" >Hiển thị 2 cột</button>
+					<button onClick={() => this.onColumnSelect("col-md-3 m-3")} className="btn btn-success mr-3" >Hiển thị 3 cột</button>
+					<button onClick={() => this.onColumnSelect("col-md-2 m-3")} className="btn btn-success mr-3" >Hiển thị 5 cột</button>
 				</div>
 				<div className="row">{staffinfo}</div>
 				<div className="row"><p>Bấm vào tên nhân viên để xem chi tiết</p></div>
