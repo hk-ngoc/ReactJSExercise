@@ -21,17 +21,20 @@ class StaffList extends Component {
 	renderStaff(stafflist) {
 		if (stafflist != null) {
 			return (
-				<Card>
-					<CardImg width="100%" src={stafflist.image} alt={stafflist.name} />
-					<CardBody>
-						<CardText>Tên nhân viên: {stafflist.name}</CardText>
-						<CardText>Ngày sinh: {dateFormat(stafflist.doB, "dd/mm/yy")}</CardText>
-						<CardText>Ngày vào công ty: {dateFormat(stafflist.startDate, "dd/mm/yy")}</CardText>
-						<CardText>Phòng ban: {stafflist.department.name}</CardText>
-						<CardText>Số ngày  nghỉ còn lại: {stafflist.annualLeave}</CardText>
-						<CardText>Số ngày đã làm thêm: {stafflist.overTime}</CardText>
-					</CardBody>
-				</Card>
+				<div className="col-12">
+					<Card>
+						<CardImg width="100%" src={stafflist.image} alt={stafflist.name} />
+						<CardBody>
+							<CardText>Tên nhân viên: {stafflist.name}</CardText>
+							<CardText>Ngày sinh: {dateFormat(stafflist.doB, "dd/mm/yy")}</CardText>
+							<CardText>Ngày vào công ty: {dateFormat(stafflist.startDate, "dd/mm/yy")}</CardText>
+							<CardText>Phòng ban: {stafflist.department.name}</CardText>
+							<CardText>Số ngày  nghỉ còn lại: {stafflist.annualLeave}</CardText>
+							<CardText>Số ngày đã làm thêm: {stafflist.overTime}</CardText>
+						</CardBody>
+					</Card>
+			    </div>
+				
 			)
 		} else {
 			<div></div>
