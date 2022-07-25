@@ -50,7 +50,7 @@ class StaffList extends Component {
 			return (
 				<div key={stafflist.id} className={this.state.columnDefault} >
 					<Card onClick={() => this.onSelectedStaff(stafflist)} className="mt-1">
-						<CardTitle>{stafflist.name}</CardTitle>
+						<CardTitle className="text-14 m-auto text-primary">{stafflist.name}</CardTitle>
 					</Card>
 				</div>
 			)
@@ -66,7 +66,7 @@ class StaffList extends Component {
 					<button onClick={() => this.onColumnSelect("col-md-2 m-3")} className="btn btn-success mr-3" >Hiển thị 5 cột</button>
 				</div>
 				<div className="row">{staffinfo}</div>
-				<div className="row"><p>Bấm vào tên nhân viên để xem chi tiết</p></div>
+				<div className="row"><h5 className="ml-3 mt-2 ">Bấm vào tên nhân viên để xem chi tiết</h5></div>
 				<div className="row">
 					{this.renderStaff(this.state.selectedStaff)}
 				</div>
