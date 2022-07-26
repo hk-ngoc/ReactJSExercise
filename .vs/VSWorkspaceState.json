@@ -3,8 +3,8 @@
     "",
     "\\public",
     "\\src",
-    "\\src\\components"
+    "\\src\\components",
+    "\\src\\shared"
   ],
-  "SelectedNode": "\\src\\App.css",
   "PreviewInSolutionExplorer": false
 }
