@@ -2,10 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\public",
+    "\\public\\assets",
     "\\src",
     "\\src\\components",
     "\\src\\shared"
   ],
-  "SelectedNode": "\\src\\components\\MenuComponent.js",
   "PreviewInSolutionExplorer": false
 }
