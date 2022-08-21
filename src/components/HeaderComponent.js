@@ -57,7 +57,7 @@ class Header extends Component {
                         <div className="row row-header">
                             <div className="col-12 col-sm-8">
                                 <h1> PHẦN MỀM QUẢN LÝ NHÂN VIÊN 1.01 </h1>
-                                <p>Keep your employees just several clicks away</p>
+                                <h4>Keep your employees just several clicks away</h4>
                             </div>
                         </div>
                     </div>
