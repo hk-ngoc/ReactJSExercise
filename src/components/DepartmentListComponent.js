@@ -1,5 +1,6 @@
 ﻿import React from 'react';
-import { Card, CardTitle, CardText, CardBody } from 'reactstrap';
+import { Card, CardTitle, CardText, CardBody, Breadcrumb, BreadcrumbItem } from 'reactstrap';
+import { Link } from 'react-router-dom';
 
 
 
@@ -26,6 +27,16 @@ const DepartmentList = (props) => {
 
 	return (
 		<div className="container">
+			<div className="row">
+				<Breadcrumb>
+					<BreadcrumbItem>
+						<Link to='/nhanvien'>NHÂN VIÊN</Link>
+					</BreadcrumbItem>
+					<BreadcrumbItem>
+						PHÒNG BAN
+					</BreadcrumbItem>
+				</Breadcrumb>
+			</div>
 			<div className="row">
 				<div className="col-12">
 					<h3>DANH SÁCH PHÒNG BAN</h3>
